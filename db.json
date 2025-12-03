@@ -1,0 +1,59 @@
+{
+  "classes": [
+    {
+      "id": "1",
+      "name": "Leg Day Inferno",
+      "trainer": "Mike",
+      "time": "2025-12-10T18:00:00",
+      "description": "Destroy your legs in 45 minutes."
+    },
+    {
+      "id": "2",
+      "name": "Cardio Hell",
+      "trainer": "Sara",
+      "time": "2025-12-11T19:30:00",
+      "description": "High intensity interval training."
+    },
+    {
+      "id": "3",
+      "name": "Back & Biceps Pump",
+      "trainer": "Julia",
+      "time": "2025-12-12T17:00:00",
+      "description": "Classic pull day session."
+    }
+  ],
+
+  "bookings": [
+    { "id": "1", "memberId": "1", "classId": "1", "timestamp": "2025-12-01T10:00:00" },
+    { "id": "2", "memberId": "1", "classId": "2", "timestamp": "2025-12-02T10:30:00" },
+    { "id": "3", "memberId": "2", "classId": "1", "timestamp": "2025-12-03T11:00:00" },
+    { "id": "4", "memberId": "3", "classId": "3", "timestamp": "2025-12-04T09:00:00" }
+  ],
+
+  "profiles": [
+    {
+      "id": "1",
+      "memberId": "1",
+      "username": "john",
+      "fullName": "John Doe",
+      "email": "john@example.com",
+      "membershipTier": "Gold"
+    },
+    {
+      "id": "2",
+      "memberId": "2",
+      "username": "alice",
+      "fullName": "Alice Smith",
+      "email": "alice@example.com",
+      "membershipTier": "Bronze"
+    },
+    {
+      "id": "3",
+      "memberId": "3",
+      "username": "bob",
+      "fullName": "Bob Stone",
+      "email": "bob@example.com",
+      "membershipTier": "Silver"
+    }
+  ]
+}
