@@ -111,4 +111,6 @@
       "note": "This entry just makes the collection exist so POST /steal-contacts works."
     }
   ]
+  "upload-image": []
+
 }
