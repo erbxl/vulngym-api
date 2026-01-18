@@ -27,40 +27,67 @@
       "trainer": "Liam",
       "time": "15:00",
       "description": "Learn basic barbell movements with proper technique. Beginner friendly."
+    },
+    {
+      "id": "5",
+      "name": "Boxing Basics",
+      "trainer": "Noah",
+      "time": "17:30",
+      "description": "Footwork, combos, and conditioning. Gloves recommended."
+    },
+    {
+      "id": "6",
+      "name": "Pilates Core",
+      "trainer": "Emma",
+      "time": "12:00",
+      "description": "Low-impact pilates focused on core stability and posture."
+    },
+    {
+      "id": "7",
+      "name": "Spin Sprint",
+      "trainer": "Olivia",
+      "time": "07:15",
+      "description": "Intervals on the bike. Fast-paced cardio session."
+    },
+    {
+      "id": "8",
+      "name": "Mobility & Stretch",
+      "trainer": "Ethan",
+      "time": "20:00",
+      "description": "Deep stretching and mobility work for recovery."
     }
   ],
 
   "bookings": [
-    {
-      "id": 1,
-      "memberId": "1",
-      "classId": "1",
-      "timestamp": "1710000000000"
-    },
-    {
-      "id": 2,
-      "memberId": "1",
-      "classId": "2",
-      "timestamp": "1710003600000"
-    },
-    {
-      "id": 3,
-      "memberId": "2",
-      "classId": "3",
-      "timestamp": "1710010000000"
-    },
-    {
-      "id": 4,
-      "memberId": "admin",
-      "classId": "3",
-      "timestamp": "1710017200000"
-    },
-    {
-      "id": 5,
-      "memberId": "victim",
-      "classId": "4",
-      "timestamp": "1710020000000"
-    }
+    { "id": 1,  "memberId": "1",     "classId": "1", "timestamp": "1710000000000" },
+    { "id": 2,  "memberId": "1",     "classId": "2", "timestamp": "1710003600000" },
+    { "id": 3,  "memberId": "1",     "classId": "7", "timestamp": "1710011000000" },
+
+    { "id": 4,  "memberId": "2",     "classId": "3", "timestamp": "1710017200000" },
+    { "id": 5,  "memberId": "2",     "classId": "6", "timestamp": "1710020000000" },
+
+    { "id": 6,  "memberId": "3",     "classId": "4", "timestamp": "1710023600000" },
+    { "id": 7,  "memberId": "3",     "classId": "5", "timestamp": "1710030000000" },
+
+    { "id": 8,  "memberId": "4",     "classId": "8", "timestamp": "1710033600000" },
+
+    { "id": 9,  "memberId": "5",     "classId": "2", "timestamp": "1710040000000" },
+    { "id": 10, "memberId": "5",     "classId": "6", "timestamp": "1710043600000" },
+
+    { "id": 11, "memberId": "victim","classId": "4", "timestamp": "1710050000000" },
+    { "id": 12, "memberId": "victim","classId": "1", "timestamp": "1710053600000" },
+    { "id": 13, "memberId": "victim","classId": "7", "timestamp": "1710060000000" },
+
+    { "id": 14, "memberId": "admin", "classId": "3", "timestamp": "1710063600000" },
+    { "id": 15, "memberId": "admin", "classId": "5", "timestamp": "1710070000000" },
+
+    { "id": 16, "memberId": "coach", "classId": "8", "timestamp": "1710073600000" },
+
+    { "id": 17, "memberId": "guest", "classId": "1", "timestamp": "1710080000000" },
+
+    { "id": 18, "memberId": "1",     "classId": "8", "timestamp": "1710083600000" },
+    { "id": 19, "memberId": "2",     "classId": "7", "timestamp": "1710090000000" },
+    { "id": 20, "memberId": "3",     "classId": "6", "timestamp": "1710093600000" }
   ],
 
   "profiles": [
@@ -84,6 +111,42 @@
     },
     {
       "id": 3,
+      "memberId": "3",
+      "username": "user3",
+      "fullName": "Regular User Three",
+      "email": "user3@vulngym.local",
+      "membershipLevel": "Standard",
+      "notes": "Prefers strength training and boxing."
+    },
+    {
+      "id": 4,
+      "memberId": "4",
+      "username": "user4",
+      "fullName": "Regular User Four",
+      "email": "user4@vulngym.local",
+      "membershipLevel": "Basic",
+      "notes": "Mostly does mobility and recovery sessions."
+    },
+    {
+      "id": 5,
+      "memberId": "5",
+      "username": "user5",
+      "fullName": "Regular User Five",
+      "email": "user5@vulngym.local",
+      "membershipLevel": "Premium",
+      "notes": "Attends classes almost daily."
+    },
+    {
+      "id": 6,
+      "memberId": "victim",
+      "username": "victim",
+      "fullName": "Victim User",
+      "email": "victim@vulngym.local",
+      "membershipLevel": "Premium",
+      "notes": "Target profile for IDOR demo."
+    },
+    {
+      "id": 7,
       "memberId": "admin",
       "username": "admin",
       "fullName": "Gym Administrator",
@@ -92,23 +155,22 @@
       "notes": "Has access to all internal data."
     },
     {
-      "id": 4,
-      "memberId": "victim",
-      "username": "victim",
-      "fullName": "Victim User",
-      "email": "victim@vulngym.local",
-      "membershipLevel": "Premium",
-      "notes": "Target profile for IDOR demo."
-    }
-  ],
-
-  "steal-contacts": [
+      "id": 8,
+      "memberId": "coach",
+      "username": "coach",
+      "fullName": "Coach Account",
+      "email": "coach@vulngym.local",
+      "membershipLevel": "Staff",
+      "notes": "Trainer tooling account used for testing."
+    },
     {
-      "id": 1,
-      "name": "Template Contact",
-      "phone": "+32000000000",
-      "email": "template@example.com",
-      "note": "This entry just makes the collection exist so POST /steal-contacts works."
+      "id": 9,
+      "memberId": "guest",
+      "username": "guest",
+      "fullName": "Guest Account",
+      "email": "guest@vulngym.local",
+      "membershipLevel": "Guest",
+      "notes": "Limited access / demo account."
     }
   ]
 }
